@@ -1,2 +1,2 @@
-# Staticmethod
-Repositorio creado para la entrega de el programa utilizando static method
+# PROGRA 2
+Repositorio creado para las entregas de clase 
