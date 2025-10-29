@@ -1,20 +1,3 @@
-import unittest
-from src.cuenta import Cuenta
-class TestQuitarSaldo(unittest.TestCase):
-    def test_cuando_retiro_dinero_pero_menos_del_total_a_cuenta(self) -> None:
-        cuenta = Cuenta()
-        cuenta.retirar(500)
-        self.assertEqual(cuenta.saldo,1500)
-    def test_cuando_retiro_dinero_mayor_al_saldo(self) -> None:
-        
-        cuenta = Cuenta()
-        cuenta.retirar(3000)
-        self.assertEqual(cuenta.saldo,1500)
-
-if __name__== '__main__':
-    unittest.main()
-
-
 
 import unittest
 from src.cuenta import Cuenta
@@ -33,4 +16,5 @@ class TestQuitarSaldo(unittest.TestCase):
             cuenta.retirar(3000)
 
 if __name__ == '__main__':
+
     unittest.main()
