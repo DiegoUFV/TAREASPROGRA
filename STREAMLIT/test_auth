@@ -1,0 +1,7 @@
+from src.auth import registrar, verificar
+
+def test_registro_y_login():
+    assert registrar("pepe", "1234") is True
+    assert verificar("pepe", "1234") is True
+    assert registrar("pepe", "1234") is False  # no se repite
+    assert verificar("pepe", "xxxx") is False
